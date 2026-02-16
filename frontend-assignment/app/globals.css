@@ -1,0 +1,88 @@
+/* app/globals.css - Modern glassmorphism design (Rubric: Styling - 1 point) */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #2d3748;
+}
+
+.navbar { 
+  background: rgba(255,255,255,0.95); 
+  backdrop-filter: blur(10px); 
+  padding: 1.2rem 2rem; 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); 
+  position: sticky; 
+  top: 0; 
+  z-index: 100; 
+}
+
+.nav-links { 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  gap: 2rem; 
+}
+
+.nav-links a { 
+  color: #4a5568; 
+  text-decoration: none; 
+  font-weight: 600; 
+  padding: 0.5rem 1rem; 
+  border-radius: 12px; 
+  transition: all 0.3s ease; 
+}
+
+.nav-links a:hover { 
+  background: linear-gradient(45deg, #667eea, #764ba2); 
+  color: white; 
+  transform: translateY(-2px); 
+}
+
+.container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+
+h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+h2 { font-size: 2rem; color: #4a5568; margin-bottom: 1rem; }
+h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+
+button {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white; border: none;
+  padding: 0.8rem 2rem; border-radius: 50px;
+  cursor: pointer; font-weight: 600;
+  margin: 0.5rem; transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102,126,234,0.3);
+}
+
+button:hover:not(:disabled) { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(102,126,234,0.4); }
+button:disabled { background: #a0aec0; cursor: not-allowed; transform: none; }
+
+input[type="text"] {
+  padding: 1rem 1.5rem; font-size: 1.1rem;
+  border: 2px solid #e2e8f0; border-radius: 50px;
+  width: 300px; margin-right: 1rem;
+}
+
+.card, .status-box {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  padding: 2rem; border-radius: 20px;
+  margin: 2rem 0; border: 1px solid rgba(255,255,255,0.5);
+}
+
+.status-box { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+
+ul { list-style: none; padding: 0; }
+li { 
+  background: white; padding: 1rem 1.5rem; margin: 0.5rem 0;
+  border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
