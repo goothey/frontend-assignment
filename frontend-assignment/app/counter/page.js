@@ -1,14 +1,14 @@
-// app/counter/page.js - 1st stateful component (count state) + props + events
+
 'use client'; 
 
 import { useState } from 'react';
 import StatusMessage from '../components/StatusMessage'; // Uses props
 
 export default function CounterPage() {
-  // Component 1: Manages its own state (Rubric: State Management)
+  // Component 1: Manages its own state 
   const [count, setCount] = useState(0);
 
-  // Event handler 1: Button click updates state (Rubric: Event Handling)
+  // Event handler 1: Button click updates state 
   const handleIncrement = () => setCount(prev => prev + 1);
   const handleDecrement = () => setCount(prev => prev - 1);
 
