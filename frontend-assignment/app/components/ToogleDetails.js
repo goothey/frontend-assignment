@@ -1,4 +1,4 @@
-// app/components/ToggleDetails.js - 3rd stateful component (Rubric: 3 components required)
+
 'use client';
 
 import { useState } from 'react';
@@ -18,7 +18,7 @@ export default function ToggleDetails() {
         {showDetails ? '🙈 Hide Assignment Details' : '👀 Show Assignment Details'}
       </button>
       
-      {/* Conditional rendering with logical && operator */}
+      /* Conditional rendering with logical && operator */
       {showDetails && (
         <div>
           <p><strong> Assignment Features Demonstrated:</strong></p>
