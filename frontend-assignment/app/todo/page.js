@@ -1,11 +1,10 @@
-// app/todo/page.js - 2nd stateful component (todos + task state) + form events
 'use client';
 
 import { useState } from 'react';
 import StatusMessage from '../components/StatusMessage'; // Uses props
 
 export default function TodoPage() {
-  // Component 2: Manages its own state (Rubric: State Management)
+  // Component 2: Manages its own state 
   const [task, setTask] = useState('');
   const [todos, setTodos] = useState([]);
 
@@ -35,7 +34,7 @@ export default function TodoPage() {
         <button type="submit"> Add Task</button>
       </form>
 
-      {/* Conditional rendering based on state (Rubric: Conditional Rendering) */}
+      {/* Conditional rendering based on state */}
       {todos.length === 0 ? (
         <p> No tasks yet. Add your first task!</p>
       ) : (
