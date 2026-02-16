@@ -1,4 +1,4 @@
-// app/components/StatusMessage.js - Receives props from parent components (Rubric: Props required)
+//  - Receives props from parent components 
 export default function StatusMessage({
     label,
     value,
