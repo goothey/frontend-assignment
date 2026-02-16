@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* Navigation menu - required for deliverable 1 */}
+        {/* Navigation menu */}
         <header className="navbar">
           <nav className="nav-links">
             <a href="/"> Home</a>
